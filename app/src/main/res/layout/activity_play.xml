@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity">
+
+    <TextView
+        android:id="@+id/currentSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-black"
+        android:text="currentSong"
+        android:textColor="@android:color/black"
+        android:textSize="35dp"
+        app:fontFamily="cursive" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="300dp"
+        android:layout_height="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp" />
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/seekBar"
+
+
+        android:padding="15dp"
+        android:background="@drawable/custombutton" />
+    <Button
+        android:id="@+id/previousBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:drawableStart="@drawable/ic_play_previous_30dp"
+         android:layout_toLeftOf="@id/playBtn"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="60dp"
+
+        android:layout_below="@id/seekBar"
+
+        android:padding="5dp"
+        android:background="@drawable/custombutton" />
+
+    <Button
+        android:id="@+id/nextBtn"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+      android:layout_toRightOf="@id/playBtn"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="60dp"
+
+        android:layout_below="@id/seekBar"
+        android:drawableStart="@drawable/ic_play_next_30dp"
+        android:padding="5dp"
+        android:background="@drawable/custombutton" />
+
+
+</RelativeLayout>
